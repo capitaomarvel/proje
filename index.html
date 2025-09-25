@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Portfólio | Clara Oliveira da Silva</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="p-5">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <h1 class="fw-bold">Clara Oliveira da Silva</h1>
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Livros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-primary rotacao-botao fw-bold">Acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista ">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold">A +</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold">A -</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+
+        <!-- Início -->
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-dark fst-italic fw-bold">Bem-vindo(a) ao meu portfólio literário!</h1>
+                    <h2 class="mb-3 fw-semibold">Sou <span class="text-primary">Clara Oliveira da Silva</span>, apaixonada por suspense e crimes reais.</h2>
+                    <a href="#sobre" class="btn btn-primary btn-lg botao-inicio fw-semibold">Descubra minhas leituras</a>
+                </div>
+                <img src="Logo.jpg"
+                    alt="Imagem ilustrativa de livros de suspense"
+                    title="Livros de suspense" class="img-fluid img-inicio">
+            </div>
+        </section>
+
+        <!-- Sobre -->
+        <section id="sobre" class="my-5 pt-6">
+            <div class="container d-flex align-items-center ">
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="Cla.jpg" class="rounded-pill" alt="Foto de Clara Oliveira da Silva"
+                        width="273" height="331" loading="lazy">
+                </div>
+                <div class="col-7">
+                    <h2>Sobre mim</h2>
+                    <p class="p-2">Olá! Meu nome é <strong>Clara Oliveira da Silva</strong> e sou fascinada por livros de suspense e casos criminais. Adoro mergulhar em histórias que exploram a mente humana, desvendar mistérios e acompanhar investigações envolventes.</p>
+                    <p class="p-2">Já li obras que marcaram minha visão sobre o gênero, como <em>“Dias Perfeitos”</em>, <em>“Infância Roubada”</em>, <em>“A Paciente Silenciosa”</em> e <em>“O Homem de Giz”</em>. Cada livro me fez refletir sobre o comportamento humano, a tensão da narrativa e a arte de prender o leitor até a última página. Neste portfólio, compartilho minhas leituras favoritas e minhas impressões sobre elas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria -->
+        <section id="galeria">
+            <h2 class="text-center pt-5">Livros que já li</h2>
+            <div class="container p-3 mt-3 fundo-galeria">
+
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="Img/Di.webp"
+                            alt="Capa do livro Dias Perfeitos"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Img/In.jpg"
+                            alt="Capa do livro Infância Roubada"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+                <div class="row mt-4 justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="Pac.jpg"
+                            alt="Capa do livro A Paciente Silenciosa"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Men.jpg"
+                            alt="Capa do livro O Homem de Giz"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email">
